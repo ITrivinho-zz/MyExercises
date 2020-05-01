@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+
+    <style>
+        body {
+            font: normal 14pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Digite a velocidade do seu carro ->
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="calcular" onclick="clicar()">
+    <div id='res'></div>
+
+    <script>      
+        function clicar(){
+            var tvel = document.getElementById('txtvel')
+            var vel = Number(tvel.value)
+            var d = document.getElementById('res')
+            d.innerHTML = `Sua velocidade atual é de <strong>${vel}Km/h</strong>`
+            if (vel > 60){
+                d.innerHTML += "<br>Você ultrapassou o limite de velocidade. <strong>MULTADO!</strong>"
+            }
+        }
+    </script>
+</body>
+</html>

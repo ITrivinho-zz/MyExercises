@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEU SITE</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-size: 30pt;
+            position: relative;
+            margin: 5pt;
+        }
+        p{
+            text-indent: 20pt;
+            text-align: justify;
+        }
+        section#main{
+            display: block;
+            width: 800px;
+            background-color: #bbbbbb;
+            margin: auto;
+            box-shadow: 1px 1px 4px black;
+        }
+        img#foto{
+            display: block;
+            box-shadow: 1px 1px 4px black;
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <section id=main>
+    <h1>Teste JavaScript</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit dolores enim voluptas, eos temporibus natus maiores voluptatibus sed quas facere expedita nihil optio nisi aliquid nostrum ut excepturi pariatur ducimus.</p>
+    <img id=foto src="foto.jfif"/>
+    <script>
+        window.alert('Olá, você está entrando no meu site')
+        nome = prompt('Qual o seu nome?')
+        alert('Prazer em te conhecer ' + nome)
+        document.write(`<p>Seu nome tem ${nome.length} letras</p>`)
+    </script>
+    </section>
+</body>
+</html>

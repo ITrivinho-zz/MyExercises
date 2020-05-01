@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecendo o DOM</title>
+    <style>
+        body {
+            background-color: #4360dd;
+            color: white;
+            font: normal 14pt Arial;
+             }
+    </style>
+</head>
+<body>
+    <h1>DOM - Document Obejct Model</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores vel aliquam necessitatibus, ea amet aspernatur magni dolores distinctio eos dolorum deleniti iste molestiae qui illo reiciendis, adipisci ipsum voluptatum earum.</p>
+    <div id="msg">Clique em Mim!</div>
+
+    <script>
+        var t1 = document.getElementsByTagName('h1')[0]
+        var body = document.body
+        var d = document.getElementById('msg')
+
+        d.style.padding = '10px'
+        d.style.backgroundColor = 'darkblue'
+        d.style.textAlign = 'right'
+
+     </script>
+</body>
+</html>
